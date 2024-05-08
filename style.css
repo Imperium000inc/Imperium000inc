@@ -1,0 +1,623 @@
+body, html {
+    overflow-x: hidden;
+   
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #000;
+    color: #fff;
+     overflow-x: hidden;
+     max-width: 100%;
+    
+}
+
+h2 {
+    text-align: center;
+    font-family: "Orbitron", sans-serif;
+}
+
+#main-header {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    z-index: 1000; /* Asegura que el header esté por encima de los otros elementos */
+    position: fixed;
+    top: 0;
+    
+}
+
+.linea-horizontal {
+    border-top: 2px solid #ae9508;
+    width: 100%; /* Asegura que la línea ocupe todo el ancho */
+    margin-top: 20px;
+    position: absolute;
+    top: 0; /* Coloca la línea en la parte superior */
+    left: 0; /* Coloca la línea en el borde izquierdo */
+}
+
+.linea-horizontal-2 {
+    border-top: 2px solid #ae9508;
+    width: 100%; /* Asegura que la línea ocupe todo el ancho */
+    margin-top: 10px;
+    
+    top: 0; /* Coloca la línea en la parte superior */
+    left: 0; /* Coloca la línea en el borde izquierdo */
+}
+
+.logo {
+    margin-bottom: 0px; /* Reducimos el espacio entre el logo y las letras */
+}
+
+.logo img {
+    width: 150px;
+    height: auto;
+}
+
+.nav-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-left: 20px;
+    display: flex;
+    justify-content: center; /* Centramos horizontalmente las opciones */
+    font-family: "Orbitron", sans-serif;
+}
+
+.nav-links ul li {
+    margin-right: 20px; /* Aumentamos el espacio entre las letras y los iconos de redes */
+}
+
+.nav-links ul li:last-child {
+    margin-right: 0; /* Eliminamos el margen derecho del último elemento */
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.nav-links ul li a::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: grey;
+    transition: height 0.3s ease;
+}
+
+.nav-links ul li a:hover::after {
+    height: 2px;
+}
+
+.nav-links ul li a:hover {
+    color: #ae9508;
+}
+
+footer#main-footer {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    z-index: 1000; /* Asegura que el footer esté por encima de otros elementos si es necesario */
+    position: relative; /* Cambiado a position: relative; */
+    
+}
+
+footer#main-footer .logo {
+    margin-bottom: 10px; /* Espacio entre la imagen del logo y los iconos de redes */
+    margin-right: 10px;
+}
+
+footer#main-footer .logo img {
+    width: 120px;
+    height: auto;
+}
+
+footer#main-footer .social-icons {
+    display: flex;
+    align-items: center;
+    margin-top: 0px; /* Espacio entre el texto y los iconos de redes */
+}
+
+footer#main-footer .social-icons a {
+    margin: 0 10px; /* Espacio entre los iconos de redes */
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+footer#main-footer .social-icons a:hover {
+    color: #ae9508;
+    transform: translateY(-3px);
+}
+
+footer#main-footer .terms {
+    font-family: "Orbitron", sans-serif;
+    text-decoration: none;
+    color: #fff;
+    margin-top: 5px; /* Ajuste del margen superior */
+}
+
+footer#main-footer .politics {
+    display: flex;
+    align-items: center;
+    margin-top: 10px; /* Ajuste del margen superior */
+}
+
+footer#main-footer .politics a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+footer#main-footer .politics a:hover {
+    color: #ae9508;
+}
+
+.terms {
+    font-family: "Orbitron", sans-serif;
+    text-decoration: none;
+    color: #fff;
+    margin-top: 5px;
+    font-size: 12px;
+    text-align: center;
+    margin-right: 30px;
+}
+
+.politics {
+    display: flex;
+    margin: 4px;
+}
+
+.section {
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.section p {
+    font-size: 18px;
+}
+
+#inicio {
+    background-image: url('background-inicio.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#inicio h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+#productos,
+#contacto {
+    background-color: #111;
+    color: #fff;
+    padding: 100px 0;
+}
+
+#catalogo {
+    padding: 50px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    margin-top: 200px;
+}
+
+.producto-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ae9508;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    padding: 20px;
+    max-width: 100%;
+    margin: 5px auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+
+}
+
+.producto-imagen img {
+    width: 200px;
+    
+}
+
+.producto-info {
+    text-align: center;
+    margin-left: 40px;
+    margin-right: 40px;
+    
+}
+
+.producto-titulo {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 24px;
+    margin-bottom: 10px;
+    
+}
+
+.producto-descripcion {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.producto-precio {
+    background-color: #ae9508;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.producto-precio:hover {
+    background-color: #ffd700;
+    cursor: pointer;
+}
+
+
+.producto-botones {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+
+.boton-informacion img {
+    width: 80px;
+    border-radius: 50%;
+    background-color: #ae9508;
+    padding: 2px;
+    transition: transform 0.3s ease;
+}
+
+.boton-informacion img:hover {
+    transform: scale(1.1);
+}
+
+.boton-comprar,
+.boton-mas-info {
+    font-family: 'Orbitron', sans-serif;
+    text-decoration: none;
+    color: #fff;
+    background-color: #ae9508;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 10px;
+    transition: background-color 0.3s ease;
+}
+
+.boton-comprar:hover,
+.boton-mas-info:hover {
+    background-color: #ffd700;
+}
+
+.boton-whatsapp {
+    font-family: 'Orbitron', sans-serif;
+    text-decoration: none;
+    color: #fff;
+    background-color: #008000;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 10px;
+    transition: background-color 0.3s ease;
+}
+
+#productos .boton-whatsapp {
+    background-color: #008000 !important;
+}
+
+/* Estilos adicionales para la sección de detalles del producto */
+#product-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.product-images-container {
+    position: relative;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 40px;
+}
+
+.product-images-container img {
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 60px;
+    margin-bottom: 2px;
+    margin-left: 10px;
+    margin-right: 10px;
+    box-shadow: #000 5px 5px;
+}
+
+.product-prev-btn, .product-next-btn {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: black;
+    font-size: 50px;
+    cursor: pointer;
+    z-index: 1000; /* Asegura que las flechas estén sobre otros elementos */
+    background-color: #ae9508;
+    border-radius: 50%;
+    padding: 8px;
+    box-shadow: white 2px 3px 3px;
+}
+
+.product-prev-btn {
+    left: 0;
+}
+
+.product-next-btn {
+    right: 0;
+}
+
+.product-info {
+    text-align: left;
+}
+
+.product-title {
+    font-family: 'Orbitron', sans-serif;
+    color: #ae9508;
+    margin-bottom: 2px;
+    margin-top: 10px;
+}
+
+.product-description {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.product-price {
+    color: #ae9508;
+    font-size: 24px;
+    margin-bottom: 20px;
+    background-color: black;
+    padding: 5px;
+}
+
+.product-buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+.product-buy-btn, .product-info-btn {
+    text-decoration: none;
+    color: #fff;
+    background-color: #ae9508;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.product-buy-btn:hover, .product-info-btn:hover {
+    background-color: #ffd700;
+}
+
+/* Estilos para el header */
+#product-header {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    z-index: 1000; /* Asegura que el header esté por encima de otros elementos si es necesario */
+    position: fixed;
+    top: 0;
+}
+
+.product-logo {
+    margin-bottom: 0px; /* Reducimos el espacio entre el logo y las letras */
+}
+
+.product-logo img {
+    width: 150px;
+    height: auto;
+}
+
+/* Estilos para la sección de detalles del producto */
+/* Estilos para el header */
+#product-header {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    z-index: 1000; /* Asegura que el header esté por encima de otros elementos si es necesario */
+    position: fixed;
+    top: 0;
+}
+
+.product-logo {
+    margin-bottom: 0px; /* Reducimos el espacio entre el logo y las letras */
+}
+
+.product-logo img {
+    width: 150px;
+    height: auto;
+}
+
+/* Estilos para la sección de detalles del producto */
+#product-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+.product-info {
+    text-align: center;
+    max-width: 500px; /* Ajusta el ancho máximo para el contenido */
+    margin-top: 20px; /* Espacio superior */
+}
+
+.product-image {
+    margin-bottom: 20px;
+}
+
+.product-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.product-title {
+    font-family: 'Orbitron', sans-serif;
+    color: #ae9508;
+    margin-bottom: 10px;
+}
+
+.product-price {
+    color: #ae9508;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.product-description {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.product-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-buy-btn, .product-info-btn {
+    text-decoration: none;
+    color: #fff;
+    background-color: #ae9508;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.product-buy-btn:hover, .product-info-btn:hover {
+    background-color: #ffd700;
+}
+
+/* Estilos para el footer */
+#product-footer {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    width: 100%;
+    z-index: 1000; /* Asegura que el footer esté por encima de otros elementos si es necesario */
+    position: relative; /* Cambiado a position: relative; */
+}
+
+#product-footer .logo {
+    margin-bottom: 10px; /* Espacio entre la imagen del logo y los iconos de redes */
+    margin-right: 10PX;
+}
+
+#product-footer .logo img {
+    width: 120px;
+    height: auto;
+}
+
+#product-footer .social-icons {
+    display: flex;
+    align-items: center;
+    margin-top: 0px; /* Espacio entre el texto y los iconos de redes */
+}
+
+#product-footer .social-icons a {
+    margin: 0 10px; /* Espacio entre los iconos de redes */
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+#product-footer .social-icons a:hover {
+    color: #ae9508;
+    transform: translateY(-3px);
+}
+
+#product-footer .terms {
+    font-family: "Orbitron", sans-serif;
+    text-decoration: none;
+    color: #fff;
+    margin-top: 5px; /* Ajuste del margen superior */
+}
+
+#product-footer .politics {
+    display: flex;
+    align-items: center;
+    margin-top: 10px; /* Ajuste del margen superior */
+}
+
+#product-footer .politics a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+#product-footer .politics a:hover {
+    color: #ae9508;
+}
+
+.terms {
+    font-family: "Orbitron", sans-serif;
+    text-decoration: none;
+    color: #fff;
+    margin-top: 5px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.politics {
+    display: flex;
+    margin: 4px;
+}
