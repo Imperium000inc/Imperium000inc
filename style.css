@@ -293,8 +293,8 @@ footer#main-footer .politics a:hover {
 }
 
 .boton-comprar,
-.boton-mas-info
- {
+.boton-mas-info,
+.boton-whatsapp {
     font-family: 'Orbitron', sans-serif;
     text-decoration: none;
     color: #fff;
@@ -309,20 +309,6 @@ footer#main-footer .politics a:hover {
     text-align: center;
 }
 
-.boton-comprar{
-    font-family: 'Orbitron', sans-serif;
-    text-decoration: none;
-    color: #fff;
-    background-color: #008000;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 10px;
-    margin: 5px 0; /* Espacio entre los botones */
-    transition: background-color 0.3s ease;
-    width: 80%; /* Ancho fijo para todos los botones */
-    max-width: 300px; /* Ancho máximo para evitar botones demasiado grandes */
-    text-align: center;
-}
 .boton-comprar:hover,
 .boton-mas-info:hover,
 .boton-whatsapp:hover {
@@ -384,7 +370,7 @@ footer#main-footer .politics a:hover {
 }
 
 .product-info {
-    text-align: left;
+    max-width: 600px;
 }
 
 .product-title {
