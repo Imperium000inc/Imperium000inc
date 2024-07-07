@@ -236,7 +236,7 @@ footer#main-footer .politics a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid #ae9508;
+    border: 3px solid #ae9508;
     border-radius: 10px;
     margin-bottom: 30px;
     padding: 20px;
@@ -248,13 +248,14 @@ footer#main-footer .politics a:hover {
 
 .producto-imagen img {
     width: 200px;
-    
+    border: 5px solid #ae9508;
+    margin: 2px;
 }
 
 .producto-info {
     text-align: center;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
     
 }
 
@@ -285,7 +286,7 @@ footer#main-footer .politics a:hover {
 
 .producto-botones {
     align-items: center;
-    display: flex;
+    display: block;
     justify-content: space-between;
     margin-bottom: 10px;
 }
@@ -303,7 +304,7 @@ footer#main-footer .politics a:hover {
     transform: scale(1.1);
 }
 
-.boton-comprar,
+
 .boton-mas-info {
     font-family: 'Orbitron', sans-serif;
     text-decoration: none;
@@ -313,6 +314,19 @@ footer#main-footer .politics a:hover {
     border-radius: 5px;
     padding: 10px 10px;
     transition: background-color 0.3s ease;
+   
+}
+.boton-comprar {
+    font-family: 'Orbitron', sans-serif;
+    text-decoration: none;
+    color: #fff;
+    background-color: #16ae08;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 25px;
+    transition: background-color 0.3s ease;
+    margin: 5px;
+    
 }
 
 .boton-comprar:hover,
@@ -327,8 +341,9 @@ footer#main-footer .politics a:hover {
     background-color: #008000;
     border: none;
     border-radius: 5px;
-    padding: 10px 10px;
+    padding: 5px 5px;
     transition: background-color 0.3s ease;
+    margin: 0;
 }
 
 #productos .boton-whatsapp {
@@ -589,13 +604,13 @@ footer#main-footer .politics a:hover {
     font-family: "Orbitron", sans-serif;
     text-decoration: none;
     color: #fff;
-    margin-top: 5px; /* Ajuste del margen superior */
+    margin-top: 5px;
 }
 
 #product-footer .politics {
     display: flex;
     align-items: center;
-    margin-top: 10px; /* Ajuste del margen superior */
+    margin-top: 10px; 
 }
 
 #product-footer .politics a {
@@ -607,6 +622,7 @@ footer#main-footer .politics a:hover {
 #product-footer .politics a:hover {
     color: #ae9508;
 }
+
 
 .terms {
     font-family: "Orbitron", sans-serif;
