@@ -1,6 +1,5 @@
 body, html {
     overflow-x: hidden;
-   
 }
 body {
     margin: 0;
@@ -8,9 +7,7 @@ body {
     font-family: 'Roboto', sans-serif;
     background-color: #000;
     color: #fff;
-     overflow-x: hidden;
-     max-width: 100%;
-    
+    max-width: 100%;
 }
 
 h2 {
@@ -26,32 +23,30 @@ h2 {
     align-items: center;
     padding: 10px;
     width: 100%;
-    z-index: 1000; /* Asegura que el header esté por encima de los otros elementos */
+    z-index: 1000;
     position: fixed;
     top: 0;
-    
 }
 
 .linea-horizontal {
     border-top: 2px solid #ae9508;
-    width: 100%; /* Asegura que la línea ocupe todo el ancho */
+    width: 100%;
     margin-top: 20px;
     position: absolute;
-    top: 0; /* Coloca la línea en la parte superior */
-    left: 0; /* Coloca la línea en el borde izquierdo */
+    top: 0;
+    left: 0;
 }
 
 .linea-horizontal-2 {
     border-top: 2px solid #ae9508;
-    width: 100%; /* Asegura que la línea ocupe todo el ancho */
+    width: 100%;
     margin-top: 10px;
-    
-    top: 0; /* Coloca la línea en la parte superior */
-    left: 0; /* Coloca la línea en el borde izquierdo */
+    top: 0;
+    left: 0;
 }
 
 .logo {
-    margin-bottom: 0px; /* Reducimos el espacio entre el logo y las letras */
+    margin-bottom: 0px;
 }
 
 .logo img {
@@ -65,16 +60,16 @@ h2 {
     margin: 0;
     margin-left: 20px;
     display: flex;
-    justify-content: center; /* Centramos horizontalmente las opciones */
+    justify-content: center;
     font-family: "Orbitron", sans-serif;
 }
 
 .nav-links ul li {
-    margin-right: 20px; /* Aumentamos el espacio entre las letras y los iconos de redes */
+    margin-right: 20px;
 }
 
 .nav-links ul li:last-child {
-    margin-right: 0; /* Eliminamos el margen derecho del último elemento */
+    margin-right: 0;
 }
 
 .nav-links ul li a {
@@ -115,13 +110,12 @@ footer#main-footer {
     padding: 20px;
     width: 100%;
     height: 100%;
-    z-index: 1000; /* Asegura que el footer esté por encima de otros elementos si es necesario */
-    position: relative; /* Cambiado a position: relative; */
-    
+    z-index: 1000;
+    position: relative;
 }
 
 footer#main-footer .logo {
-    margin-bottom: 10px; /* Espacio entre la imagen del logo y los iconos de redes */
+    margin-bottom: 10px;
     margin-right: 10px;
 }
 
@@ -133,11 +127,11 @@ footer#main-footer .logo img {
 footer#main-footer .social-icons {
     display: flex;
     align-items: center;
-    margin-top: 0px; /* Espacio entre el texto y los iconos de redes */
+    margin-top: 0px;
 }
 
 footer#main-footer .social-icons a {
-    margin: 0 10px; /* Espacio entre los iconos de redes */
+    margin: 0 10px;
     color: #fff;
     font-size: 20px;
     text-decoration: none;
@@ -153,13 +147,13 @@ footer#main-footer .terms {
     font-family: "Orbitron", sans-serif;
     text-decoration: none;
     color: #fff;
-    margin-top: 5px; /* Ajuste del margen superior */
+    margin-top: 5px;
 }
 
 footer#main-footer .politics {
     display: flex;
     align-items: center;
-    margin-top: 10px; /* Ajuste del margen superior */
+    margin-top: 10px;
 }
 
 footer#main-footer .politics a {
@@ -243,32 +237,29 @@ footer#main-footer .politics a:hover {
     max-width: 100%;
     margin: 5px auto;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-
 }
 
 .producto-imagen img {
     width: 200px;
-    
 }
 
 .producto-info {
     text-align: center;
     margin-left: 40px;
     margin-right: 40px;
-    
 }
 
 .producto-titulo {
     font-family: 'Orbitron', sans-serif;
     font-size: 24px;
     margin-bottom: 10px;
-    
 }
 
 .producto-descripcion {
     font-size: 16px;
     margin-bottom: 20px;
 }
+
 .producto-precio {
     background-color: #ae9508;
     padding: 5px 10px;
@@ -282,14 +273,12 @@ footer#main-footer .politics a:hover {
     cursor: pointer;
 }
 
-
 .producto-botones {
-    align-items: center;
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
+    flex-direction: column; /* Ajuste para flex-direction */
+    align-items: center;
+    width: 100%; /* Asegura que los botones ocupen todo el ancho disponible */
 }
-
 
 .boton-informacion img {
     width: 80px;
@@ -304,7 +293,8 @@ footer#main-footer .politics a:hover {
 }
 
 .boton-comprar,
-.boton-mas-info {
+.boton-mas-info
+ {
     font-family: 'Orbitron', sans-serif;
     text-decoration: none;
     color: #fff;
@@ -312,15 +302,14 @@ footer#main-footer .politics a:hover {
     border: none;
     border-radius: 5px;
     padding: 10px 10px;
+    margin: 5px 0; /* Espacio entre los botones */
     transition: background-color 0.3s ease;
+    width: 80%; /* Ancho fijo para todos los botones */
+    max-width: 300px; /* Ancho máximo para evitar botones demasiado grandes */
+    text-align: center;
 }
 
-.boton-comprar:hover,
-.boton-mas-info:hover {
-    background-color: #ffd700;
-}
-
-.boton-whatsapp {
+.boton-comprar{
     font-family: 'Orbitron', sans-serif;
     text-decoration: none;
     color: #fff;
@@ -328,11 +317,20 @@ footer#main-footer .politics a:hover {
     border: none;
     border-radius: 5px;
     padding: 10px 10px;
+    margin: 5px 0; /* Espacio entre los botones */
     transition: background-color 0.3s ease;
+    width: 80%; /* Ancho fijo para todos los botones */
+    max-width: 300px; /* Ancho máximo para evitar botones demasiado grandes */
+    text-align: center;
+}
+.boton-comprar:hover,
+.boton-mas-info:hover,
+.boton-whatsapp:hover {
+    background-color: #ffd700;
 }
 
-#productos .boton-whatsapp {
-    background-color: #008000 !important;
+.boton-whatsapp {
+    background-color: #008000;
 }
 
 /* Estilos adicionales para la sección de detalles del producto */
@@ -370,7 +368,7 @@ footer#main-footer .politics a:hover {
     color: black;
     font-size: 50px;
     cursor: pointer;
-    z-index: 1000; /* Asegura que las flechas estén sobre otros elementos */
+    z-index: 1000;
     background-color: #ae9508;
     border-radius: 50%;
     padding: 8px;
@@ -391,233 +389,75 @@ footer#main-footer .politics a:hover {
 
 .product-title {
     font-family: 'Orbitron', sans-serif;
-    color: #ae9508;
-    margin-bottom: 2px;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.product-description {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.product-price {
+    background-color: #ae9508;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+#back-to-catalog {
+    font-family: 'Orbitron', sans-serif;
+    text-decoration: none;
+    color: #fff;
+    background-color: #ae9508;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+    display: inline-block;
     margin-top: 10px;
 }
 
-.product-description {
-    color: #fff;
-    margin-bottom: 20px;
-}
-
-.product-price {
-    color: #ae9508;
-    font-size: 24px;
-    margin-bottom: 20px;
-    background-color: black;
-    padding: 5px;
-}
-
-.product-buttons {
-    display: flex;
-    flex-direction: column;
-}
-
-.product-buy-btn, .product-info-btn {
-    text-decoration: none;
-    color: #fff;
-    background-color: #ae9508;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 15px;
-    margin-bottom: 10px;
-    text-align: center;
-    transition: background-color 0.3s ease;
-}
-
-.product-buy-btn:hover, .product-info-btn:hover {
+#back-to-catalog:hover {
     background-color: #ffd700;
 }
 
-/* Estilos para el header */
-#product-header {
-    background-color: rgba(0, 0, 0, 0.9);
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
-    width: 100%;
-    z-index: 1000; /* Asegura que el header esté por encima de otros elementos si es necesario */
-    position: fixed;
-    top: 0;
+/* Estilos adicionales para media queries */
+@media screen and (max-width: 768px) {
+    #product-details {
+        flex-direction: column;
+    }
+
+    .product-images-container {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .producto-card {
+        width: 90%;
+    }
+
+    .nav-links ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links ul li {
+        margin-bottom: 10px;
+    }
 }
 
-.product-logo {
-    margin-bottom: 0px; /* Reducimos el espacio entre el logo y las letras */
-}
+@media screen and (max-width: 480px) {
+    .boton-comprar, .boton-mas-info, .boton-whatsapp {
+        width: 90%;
+    }
 
-.product-logo img {
-    width: 150px;
-    height: auto;
-}
+    .producto-card {
+        padding: 10px;
+    }
 
-/* Estilos para la sección de detalles del producto */
-/* Estilos para el header */
-#product-header {
-    background-color: rgba(0, 0, 0, 0.9);
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
-    width: 100%;
-    z-index: 1000; /* Asegura que el header esté por encima de otros elementos si es necesario */
-    position: fixed;
-    top: 0;
-}
-
-.product-logo {
-    margin-bottom: 0px; /* Reducimos el espacio entre el logo y las letras */
-}
-
-.product-logo img {
-    width: 150px;
-    height: auto;
-}
-
-/* Estilos para la sección de detalles del producto */
-#product-details {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 100px;
-}
-
-.product-info {
-    text-align: center;
-    max-width: 500px; /* Ajusta el ancho máximo para el contenido */
-    margin-top: 20px; /* Espacio superior */
-}
-
-.product-image {
-    margin-bottom: 20px;
-}
-
-.product-image img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-    margin-bottom: 10px;
-}
-
-.product-title {
-    font-family: 'Orbitron', sans-serif;
-    color: #ae9508;
-    margin-bottom: 10px;
-}
-
-.product-price {
-    color: #ae9508;
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-.product-description {
-    color: #fff;
-    margin-bottom: 20px;
-}
-
-.product-buttons {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.product-buy-btn, .product-info-btn {
-    text-decoration: none;
-    color: #fff;
-    background-color: #ae9508;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 15px;
-    margin-bottom: 10px;
-    text-align: center;
-    transition: background-color 0.3s ease;
-}
-
-.product-buy-btn:hover, .product-info-btn:hover {
-    background-color: #ffd700;
-}
-
-/* Estilos para el footer */
-#product-footer {
-    background-color: rgba(0, 0, 0, 0.9);
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 20px;
-    width: 100%;
-    z-index: 1000; /* Asegura que el footer esté por encima de otros elementos si es necesario */
-    position: relative; /* Cambiado a position: relative; */
-}
-
-#product-footer .logo {
-    margin-bottom: 10px; /* Espacio entre la imagen del logo y los iconos de redes */
-    margin-right: 10PX;
-}
-
-#product-footer .logo img {
-    width: 120px;
-    height: auto;
-}
-
-#product-footer .social-icons {
-    display: flex;
-    align-items: center;
-    margin-top: 0px; /* Espacio entre el texto y los iconos de redes */
-}
-
-#product-footer .social-icons a {
-    margin: 0 10px; /* Espacio entre los iconos de redes */
-    color: #fff;
-    font-size: 20px;
-    text-decoration: none;
-    transition: transform 0.3s ease;
-}
-
-#product-footer .social-icons a:hover {
-    color: #ae9508;
-    transform: translateY(-3px);
-}
-
-#product-footer .terms {
-    font-family: "Orbitron", sans-serif;
-    text-decoration: none;
-    color: #fff;
-    margin-top: 5px; /* Ajuste del margen superior */
-}
-
-#product-footer .politics {
-    display: flex;
-    align-items: center;
-    margin-top: 10px; /* Ajuste del margen superior */
-}
-
-#product-footer .politics a {
-    text-decoration: none;
-    color: #fff;
-    transition: color 0.3s ease;
-}
-
-#product-footer .politics a:hover {
-    color: #ae9508;
-}
-
-.terms {
-    font-family: "Orbitron", sans-serif;
-    text-decoration: none;
-    color: #fff;
-    margin-top: 5px;
-    font-size: 12px;
-    text-align: center;
-}
-
-.politics {
-    display: flex;
-    margin: 4px;
+    .producto-info {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
 }
