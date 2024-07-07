@@ -31,23 +31,24 @@ h2 {
 
 .linea-horizontal {
     border-top: 2px solid #ae9508;
-    width: 100%;
+    width: 100%; /* Asegura que la línea ocupe todo el ancho */
     margin-top: 20px;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 0; /* Coloca la línea en la parte superior */
+    left: 0; /* Coloca la línea en el borde izquierdo */
 }
 
 .linea-horizontal-2 {
     border-top: 2px solid #ae9508;
-    width: 100%;
+    width: 100%; /* Asegura que la línea ocupe todo el ancho */
     margin-top: 10px;
-    top: 0;
-    left: 0;
+    
+    top: 0; /* Coloca la línea en la parte superior */
+    left: 0; /* Coloca la línea en el borde izquierdo */
 }
 
 .logo {
-    margin-bottom: 0px;
+    margin-bottom: 0px; /* Reducimos el espacio entre el logo y las letras */
 }
 
 .logo img {
@@ -61,16 +62,16 @@ h2 {
     margin: 0;
     margin-left: 20px;
     display: flex;
-    justify-content: center;
+    justify-content: center; /* Centramos horizontalmente las opciones */
     font-family: "Orbitron", sans-serif;
 }
 
 .nav-links ul li {
-    margin-right: 20px;
+    margin-right: 20px; /* Aumentamos el espacio entre las letras y los iconos de redes */
 }
 
 .nav-links ul li:last-child {
-    margin-right: 0;
+    margin-right: 0; /* Eliminamos el margen derecho del último elemento */
 }
 
 .nav-links ul li a {
@@ -99,6 +100,7 @@ h2 {
 .nav-links ul li a:hover {
     color: #ae9508;
 }
+
 
 footer#main-footer {
     text-align: center;
@@ -293,9 +295,7 @@ footer#main-footer .politics a:hover {
     transform: scale(1.1);
 }
 
-
-.boton-mas-info
-{
+.boton-mas-info {
     font-family: 'Orbitron', sans-serif;
     text-decoration: none;
     color: #fff;
@@ -310,7 +310,7 @@ footer#main-footer .politics a:hover {
     text-align: center;
 }
 
-.boton-comprar{
+.boton-comprar {
     font-family: 'Orbitron', sans-serif;
     text-decoration: none;
     color: #fff;
@@ -439,14 +439,7 @@ footer#main-footer .politics a:hover {
         width: 90%;
     }
 
-    .nav-links ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .nav-links ul li {
-        margin-bottom: 10px;
-    }
+   
 }
 
 @media screen and (max-width: 480px) {
